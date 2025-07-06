@@ -30,8 +30,8 @@ The service exposes **a single get route** that returns **data**.
 Create a `.env` file at the root of the project with the following content :
 
 ```
-PORT=4002
-JWT_SECRET=test123
+PORT=port
+JWT_SECRET=yourjwtsecret
 ```
 
 ### Run tests
@@ -48,7 +48,7 @@ JWT_SECRET=test123
 
 ### GET /metrics
 
-- **URL :** `http://localhost:4002/metrics`.
+- **URL :** `http://localhost:port/metrics`.
 
 ---
 
@@ -69,7 +69,7 @@ _Even though the service is simple, the JWT token is signed with a secret key (`
 
 ## 📬 Notes
 
-This microservice is designed to be used only in a **local Back Office context**.
+This microservice is designed to be used only in a **local context**.
 
 It simply returns data. Use with care 😄
 
